@@ -9,7 +9,10 @@ backup:
 	cp solution.cpp "$name"_solution.cpp;\
 	cp template.cpp solution.cpp;
 
+reset:
+	cp template.cpp solution.cpp;
+
 clean:
-	rm -f solution *.o
+	rm -f *.o
 
 .PHONY: all clean run backup
