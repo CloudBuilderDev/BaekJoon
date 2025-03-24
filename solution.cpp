@@ -39,9 +39,9 @@ ll search(ll K)
 ll count(ll p)
 {
     ll count = p;
-    for (ll i = 2; i * i <= p; i++)
+    for (ll i = 2; i * i <= p; i++) 
     {
         count -= p / (i * i);
-    }
+    }                   
     return count;
 }
