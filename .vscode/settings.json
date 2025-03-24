@@ -1,0 +1,58 @@
+{
+  "files.associations": {
+    "*.tcc": "cpp",
+    "iostream": "cpp",
+    "bit": "cpp",
+    "bitset": "cpp",
+    "set": "cpp",
+    "random": "cpp",
+    "fstream": "cpp",
+    "functional": "cpp",
+    "future": "cpp",
+    "istream": "cpp",
+    "limits": "cpp",
+    "memory_resource": "cpp",
+    "mutex": "cpp",
+    "ostream": "cpp",
+    "shared_mutex": "cpp",
+    "sstream": "cpp",
+    "stop_token": "cpp",
+    "streambuf": "cpp",
+    "regex": "cpp",
+    "tuple": "cpp",
+    "valarray": "cpp",
+    "variant": "cpp",
+    "complex": "cpp"
+  },
+  "C_Cpp_Runner.cCompilerPath": "gcc",
+  "C_Cpp_Runner.cppCompilerPath": "g++",
+  "C_Cpp_Runner.debuggerPath": "gdb",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Wshadow",
+    "-Wformat=2",
+    "-Wcast-align",
+    "-Wconversion",
+    "-Wsign-conversion",
+    "-Wnull-dereference"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.includeSearch": [
+    "*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build/**",
+    "**/.vscode/**"
+  ],
+  "C_Cpp_Runner.useAddressSanitizer": false,
+  "C_Cpp_Runner.useUndefinedSanitizer": false,
+  "C_Cpp_Runner.useLeakSanitizer": false,
+  "C_Cpp_Runner.showCompilationTime": false,
+  "C_Cpp_Runner.useLinkTimeOptimization": false
+}
