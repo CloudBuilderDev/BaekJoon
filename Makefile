@@ -12,6 +12,10 @@ backup:
 reset:
 	cp template.cpp solution.cpp;
 
+load:
+	@read -p "Enter backup name: " name;\
+	cp "$name"_solution.cpp solution.cpp;
+
 clean:
 	rm -f *.o
 
