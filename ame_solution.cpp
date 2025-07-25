@@ -3,35 +3,37 @@
 using namespace std;
 typedef long long ll;
 
-// 1764
-//  N,M<= 500,000 자연수
-//  2*10^8
-int N, M;
+int N;
+
+ll factorial(int N)
+{
+    if (N == 0)
+        return 1;
+    if (N == 1)
+        return 1;
+    return N * factorial(N - 1);
+}
+long long trailing_zeros(long long n)
+{
+    long long cnt = 0;
+    for (long long p = 5; p <= n; p *= 5)
+        cnt += n / p;
+    return cnt;
+}
+
 int main()
 {
-    cin >> N >> M;
-    set<string> s;
-    for (int i = 0; i < N; i++)
-    {
-        string tmp;
-        cin >> tmp;
-        s.insert(tmp);
-    }
-    set<string> result;
-    for (int i = 0; i < M; i++)
-    {
-        string tmp;
-        cin >> tmp;
-        if (s.find(tmp) != s.end())
-        {
-            result.insert(tmp);
-        }
-    }
-    cout << result.size() << '\n';
-    for (auto it = result.begin(); it != result.end(); ++it)
-    {
-        cout << *it << '\n';
-    }
+    cin >> N;
+    ll tmp = factorial(N);
+    // cout << tmp << endl;
+    // int cnt = 0;
+    // while (tmp % 10 == 0)
+    //{
+    // cnt++;
+    // tmp /= 10;
+    //}
+    // cout << cnt << endl;
+    cout << trailing_zeros(N);
 
     return 0;
 }
